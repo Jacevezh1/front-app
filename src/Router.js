@@ -7,6 +7,7 @@ import Contact from './components/Contact'
 import Post from './components/Posts/Post'
 import Concept from './components/Concepts/Concept'
 import Layout from './components/Layout'
+import Single from "./components/Posts/Single";
 
 
 import PostState from "./context/Post/PostState";
@@ -32,11 +33,14 @@ const Router = () => {
                     {/* localhost:3000/contact */}
                     <Route path="contact" element={<Contact />} />
 
+                    {/* localhost:3000/sauces */}
+                    <Route path="concepts" element={<Concept />}/>
+
                     {/* localhost:3000/recipes */}
                     <Route path="posts" element={<Post />} />
 
-                    {/* localhost:3000/sauces */}
-                    <Route path="concepts" element={<Concept />}/>
+                    {/* localhost:3000/recipes */}
+                    <Route path="posts/:id" element={<Single />}/>
 
                   </Route>
                   

@@ -18,7 +18,14 @@ const PostState = (props) => {
     // 1. Set Initial State 
     const initialState = {
         posts: [], 
-        hola: "mundo"
+        singlePost: {
+            name: "",
+            author: "",
+            image: "",
+            description: "",
+            body: "",
+            comments: ""
+        }
 
     }
 
@@ -43,6 +50,21 @@ const PostState = (props) => {
     }
 
 
+    const getPost = async (postId) => {
+
+        const res = await axiosClient.get(`posts/readone/${postId}`)
+
+        const selectedPost = res.data.data;
+
+        dispatch({
+            type: "GET_SAUCE",
+            payload: selectedPost
+        })
+
+        return "Done"
+    }
+
+
 
 
   return (  
@@ -50,7 +72,9 @@ const PostState = (props) => {
     <PostContext.Provider 
     value={{
         posts: globalState.posts,
-        getPosts,  
+        singlePost: globalState.singlePost,
+        getPosts, 
+        getPost 
         
     }}
     >
@@ -60,4 +84,4 @@ const PostState = (props) => {
   )
 }
 
-export default PostState
+export default PostState;
