@@ -8,21 +8,21 @@ const Post = () => {
   const ctx = useContext(PostContext);
 
   const { getPosts, posts } = ctx;
-  // Estado Local
-
+  
+  // Estado Local 
   useEffect(() => {
     getPosts()
   }, [])
 
   return (
     <>
-      <div class="relative bg-gray-50 pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+      <div class="relative bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
           <div class="absolute inset-0">
-            <div class="bg-gray-50 h-1/3 sm:h-2/3"></div>
+            <div class="bg-white h-1/3 sm:h-2/3"></div>
           </div>
           <div class="relative max-w-7xl mx-auto">
             <div class="text-center">
-              <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl">From the blog</h2>
+              <h2 class="text-3xl tracking-tight font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-600 to-green-700 sm:text-4xl">From the blog</h2>
               <p class="mt-3 max-w-2xl mx-auto text-xl text-gray-500 sm:mt-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.</p>
             </div>
             <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
@@ -32,7 +32,7 @@ const Post = () => {
 
                   return (
                     <>
-                      <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+                      <div class="flex flex-col rounded-lg shadow-lg overflow-hidden border-2 border-sky-700/[.55] shadow-lg shadow-sky-700/50">
                         <div class="flex-shrink-0">
                           <Link to={`/posts/${element._id}`} >
                             <img src={element.image} alt="salsa" className="h-48 w-full object-cover" />
@@ -40,7 +40,7 @@ const Post = () => {
                         </div>
                         <div class="flex-1 bg-white p-6 flex flex-col justify-between">
                           <div class="flex-1">
-                            <p class="text-sm font-medium text-indigo-600">
+                            <p class="text-sm font-medium text-sky-600">
                               <Link to={'.'} class="hover:underline"> Article </Link>
                             </p>
                             <Link to={'.'} class="block mt-2">
