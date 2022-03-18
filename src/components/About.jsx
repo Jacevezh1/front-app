@@ -3,40 +3,20 @@ import React from 'react'
 const About = () => {
   return (
     <>
-      <div class="py-16 xl:py-36 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
-        <div class="max-w-max lg:max-w-7xl mx-auto">
-          <div class="relative z-10 mb-8 md:mb-2 md:px-6">
-            <div class="text-base max-w-prose lg:max-w-none">
-              <h2 class="flex items-center justify-center leading-6 text-sky-600 font-semibold tracking-wide uppercase">Transactions</h2>
-              <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">A better way to send money</p>
+       <div class="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
+        <div class="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
+          <div>
+          <h2 class="flex items-center justify-center leading-6 text-sky-600 font-semibold tracking-wide uppercase">Transactions</h2>
+            <div class="mt-3 sm:mt-4 lg:grid lg:grid-cols-2 lg:gap-5 lg:items-center">
+               <p class="mt-2 my-8 text-3xl leading-8 font-extrabold tracking-tight text-center text-gray-900 sm:text-4xl">A better way to send money</p>
             </div>
           </div>
           <div class="relative">
-            <svg class="hidden md:block absolute top-0 right-0 -mt-20 -mr-20" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
-              <defs>
-                <pattern id="95e8f2de-6d30-4b7e-8159-f791729db21b" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="blue" />
-                </pattern>
-              </defs>
-              <rect width="404" height="384" fill="url(#95e8f2de-6d30-4b7e-8159-f791729db21b)" />
-            </svg>
-            <svg class="hidden md:block absolute bottom-0 left-0 -mb-20 -ml-20" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
-              <defs>
-                <pattern id="7a00fe67-0343-4a3c-8e81-c145097a3ce0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="green" />
-                </pattern>
-              </defs>
-              <rect width="404" height="384" fill="url(#7a00fe67-0343-4a3c-8e81-c145097a3ce0)" />
-            </svg>
-            <div class="relative md:bg-white md:p-6">
+            <div class="relative md:bg-white md:p-6 my-4">
               <div class="lg:grid lg:grid-cols-2 lg:gap-6">
                 <div class="prose prose-indigo prose-lg text-gray-500 lg:max-w-none">
                   <p>Ultrices ultricies a in odio consequat egestas rutrum. Ut vitae aliquam in ipsum. Duis nullam placerat cursus risus ultrices nisi, vitae tellus in. Qui non fugiat aut minus aut rerum. Perspiciatis iusto mollitia iste minima soluta id.</p>
                   <p>Erat pellentesque dictumst ligula porttitor risus eget et eget. Ultricies tellus felis id dignissim eget. Est augue <a href="#">maecenas</a> risus nulla ultrices congue nunc tortor. Eu leo risus porta integer suspendisse sed sit ligula elit.</p>
-                  <ol>
-                    <li>Integer varius imperdiet sed interdum felis cras in nec nunc.</li>
-                    <li>Quam malesuada odio ut sit egestas. Elementum at porta vitae.</li>
-                  </ol>
                   <p>Amet, eu nulla id molestie quis tortor. Auctor erat justo, sed pellentesque scelerisque interdum blandit lectus. Nec viverra amet ac facilisis vestibulum. Vestibulum purus nibh ac ultricies congue.</p>
                 </div>
                 <div class="mt-6 prose prose-indigo prose-lg text-gray-500 lg:mt-0">

@@ -48,7 +48,7 @@ export default function Register() {
             <div class="mx-auto w-full max-w-sm lg:w-96">
             <div>
                 
-                <h2 class="mt-6 text-3xl font-extrabold text-gray-900 flex items-center justify-center text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-green-600">
+                <h2 class="mt-6 text-3xl font-extrabold text-gray-900 flex items-center justify-center text-transparent text-center bg-clip-text bg-gradient-to-br from-blue-500 to-green-600">
                 Create a new account
                 </h2>
             </div>

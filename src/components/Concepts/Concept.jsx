@@ -30,6 +30,8 @@ const Concept = () => {
             </div>
           </div>
 
+          
+
           <div class="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
           {
             concepts.map((element) => {

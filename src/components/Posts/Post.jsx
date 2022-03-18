@@ -52,7 +52,7 @@ const Post = () => {
                             <div class="flex-shrink-0">
                               <Link to={'.'}>
                                 <span class="sr-only">{element.author}</span>
-                                <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
+                                <img class="h-10 w-10 rounded-full" src={element.ownerlogo} alt=""/>
                               </Link>
                             </div>
                             <div class="ml-3">
@@ -62,7 +62,7 @@ const Post = () => {
                               <div class="flex space-x-1 text-sm text-gray-500">
                                 <time datetime="2020-02-12"> {element.date.substring(0, 10)} </time>
                                 <span aria-hidden="true"> &middot; </span>
-                                <span> 7 min read </span>
+                                <span> {element.reading} </span>
                               </div>
                             </div>
                           </div>
