@@ -12,7 +12,6 @@ const Concept = () => {
   const { getConcepts, concepts } = ctx;
 
   
-
   // 2. Estado Local
   useEffect(() => {
     getConcepts();
@@ -40,12 +39,12 @@ const Concept = () => {
                     <p class="text-sm text-gray-500">
                       <time datetime="2020-01-29">{element.date.substring(0, 10)}</time>
                     </p>
-                    <Link to={`/concepts/${element._id}`} class="mt-2 block">
-                      <p class="text-xl font-semibold text-gray-900">{element.name}</p>
-                    </Link>
-                    <p class="mt-3 text-base text-gray-500">{element.description}</p>
+                    <p class="text-xl font-semibold text-gray-900">{element.name}</p>
+                    <p class="mt-3 text-base text-gray-500">{element.description}...</p>
                     <div class="mt-3">
-                      <p class="text-base font-semibold text-sky-600 hover:text-green-500"> Read full story </p>
+                      <Link to={`/concepts/${element._id}`} class="mt-2 block">
+                        <p class="text-base font-semibold text-sky-600 hover:text-cyan-500"> Read More...  </p>
+                      </Link>
                     </div>
                   </div>
                 </>
