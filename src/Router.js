@@ -15,7 +15,7 @@ import Register from './components/Auth/Register'
 import PostState from "./context/Post/PostState";
 import UserState from "./context/User/UseState";
 import ConceptState from "./context/Concept/ConceptState";
-
+import NotFound from './components/Error/NotFound'
 
 const Router = () => {
 
@@ -53,6 +53,8 @@ const Router = () => {
 
                       {/* localhost:3000/recipes */}
                       <Route path="posts/:id" element={<Single />}/>
+
+                      <Route path="*" element={<NotFound />}/>
 
                       {/* localhost:3000/sauces */}
                       <Route path="concepts/:id" element={<SingleConcept />}/>

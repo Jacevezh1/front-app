@@ -1,7 +1,6 @@
-import React, { useEffect, useContext } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import { Link } from 'react-router-dom'
 import ConceptContext from "../../context/Concept/ConceptContext";
-
 
 
 const Concept = () => {
@@ -21,6 +20,8 @@ const Concept = () => {
   return (
     <>
 
+      
+
       <div class="bg-white pt-16 pb-20 px-4 sm:px-6 lg:pt-24 lg:pb-28 lg:px-8">
         <div class="relative max-w-lg mx-auto divide-y-2 divide-gray-200 lg:max-w-7xl">
           <div>
@@ -30,7 +31,6 @@ const Concept = () => {
             </div>
           </div>
 
-          
 
           <div class="mt-6 pt-10 grid gap-16 lg:grid-cols-2 lg:gap-x-5 lg:gap-y-12">
           {
@@ -66,4 +66,5 @@ const Concept = () => {
   )
 }
 
-export default Concept
+export default Concept;
+

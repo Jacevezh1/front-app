@@ -1,20 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 import { HiOutlineUserAdd } from 'react-icons/hi';
 import { HiOutlineMenu } from 'react-icons/hi';
 import { HiLogout } from 'react-icons/hi';
 import { HiOutlineSearch } from 'react-icons/hi';
 import { HiOutlineViewGrid } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+
 import logo from './../../images/logo.png'
+import SearchBar from './../Utils/SearchBar'
+  
 
 
 
 const Header = () => {
 
   const [toggleMenu, setToggleMenu] = React.useState(false)  
+
+  const [isSearchingClicked, setIsSearchingClicked] = React.useState(false) 
+
+  const [searchTerm, setSearchTerm] = React.useState('')
 
 
   return (
@@ -31,7 +37,7 @@ const Header = () => {
           <div class="lg:hidden" id="mobile-menu">
             {
               toggleMenu && (
-
+                
                 <div class="z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2x1 md:hidden list-one rounded-md animate-slide-in bg-gradient-to-br from-blue-500 to-green-600">
                   <div className="grid justify-items-center">
                     <Link to={'/'}>
@@ -66,9 +72,16 @@ const Header = () => {
               </div>
             </div>
             <div class="absolute text-gray-700 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <button type="button">
-                <HiOutlineSearch class="h-6 w-6"/>
-              </button>
+              
+              {
+                isSearchingClicked 
+                ?  
+                  <SearchBar />
+                :  
+                <button type="button" onClick={() => setIsSearchingClicked(true)}>
+                  <HiOutlineSearch class="h-6 w-6"/>
+                </button>
+              }
 
               <div class="relative text-gray-700 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-8 sm:pr-0 ml-3">
                 <button>
