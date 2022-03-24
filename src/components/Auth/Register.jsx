@@ -34,7 +34,7 @@ export default function Register() {
 		
 		e.preventDefault()
 
-		registerUser(newUser) 
+		registerUser(newUser)  
 
 	}
     
