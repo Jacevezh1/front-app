@@ -1,21 +1,38 @@
-import React from "react";
+import React, {useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import { HiOutlineUserAdd } from 'react-icons/hi';
 import { HiOutlineMenu } from 'react-icons/hi';
-import { HiLogout } from 'react-icons/hi';
 import { HiOutlineSearch } from 'react-icons/hi';
-import { HiOutlineViewGrid } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+
+import { HiOutlineLogout } from "react-icons/hi";
+import { HiOutlineUser } from "react-icons/hi";
+
+
+
 
 import logo from './../../images/logo.png'
 import SearchBar from './../Utils/SearchBar'
   
+import UserContext from '../../context/User/UserContext'
 
 
 
 const Header = () => {
 
+  // UserCtx for login
+  const ctx = useContext(UserContext);
+
+  const { currentUser, verifyingToken, logoutUser } = ctx;
+
+  useEffect(() => {
+    verifyingToken()
+  }, [])
+
+
+
+  // States for NavBar conditional render & Search 
   const [toggleMenu, setToggleMenu] = React.useState(false)  
 
   const [isSearchingClicked, setIsSearchingClicked] = React.useState(false) 
@@ -83,13 +100,31 @@ const Header = () => {
                 </button>
               }
 
-              <div class="relative text-gray-700 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-8 sm:pr-0 ml-3">
-                <button>
-                  <Link to={'/register'}>
-                    <HiOutlineUserAdd class="h-6 w-6"/>
-                  </Link>
-                </button>
-              </div>
+
+              {
+                currentUser.name ? (
+                  <>
+                    <div class="relative text-gray-700 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-8 sm:pr-0 ml-3">
+                      <button>
+                        <Link to={'/profile'}>
+                          <HiOutlineUser class="h-6 w-6"/>
+                        </Link>
+                      </button>
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div class="relative text-gray-700 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-8 sm:pr-0 ml-3">
+                      <button>
+                        <Link to={'/register'}>
+                          <HiOutlineUserAdd class="h-6 w-6"/>
+                        </Link>
+                      </button>
+                    </div>
+                  </>
+                )
+              }
+              
             </div>
           </div>
         </div>

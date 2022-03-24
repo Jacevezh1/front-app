@@ -11,11 +11,16 @@ import SingleConcept from "./components/Concepts/Single/index";
 
 import Login from './components/Auth/Login'
 import Register from './components/Auth/Register'
+import Profile from './components/User/Profile'
 
 import PostState from "./context/Post/PostState";
 import UserState from "./context/User/UseState";
 import ConceptState from "./context/Concept/ConceptState";
 import NotFound from './components/Error/NotFound'
+
+import Auth from './routes/Auth'
+import PrivateRoute from './routes/Private'
+
 
 const Router = () => {
 
@@ -37,10 +42,12 @@ const Router = () => {
                       <Route index element={<Home />}/>
 
                       {/* localhost:3000/registro */}
-                      <Route path="register" element={<Register />} />
+                      <Route path="register" element={<Auth component={Register} />} />
 
                       {/* localhost:3000/iniciar-sesion */}
-                      <Route path="login" element={<Login />} />
+                      <Route path="login" element={<Auth component={Login} />} />
+
+                      <Route path="profile" element={<PrivateRoute component={Profile} />} />
 
                       {/* localhost:3000/about */}
                       <Route path="about" element={<About />} />
