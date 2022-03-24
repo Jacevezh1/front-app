@@ -6,7 +6,7 @@ import { useReducer } from 'react';
 import PostContext from './PostContext'
 import PostReducer from './PostReducer'
 import axiosClient from './../../config/axios'
-import { Action } from 'history';
+
 
 
 

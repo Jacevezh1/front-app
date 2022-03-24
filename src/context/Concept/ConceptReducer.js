@@ -1,25 +1,24 @@
 
-
 const reducer = (globalState, action) => {
+
 
     switch (action.type) {
 
-        case "GET_SAUCE": 
+        case "GET_CONCEPT":
             return {
                 ...globalState,
-                singlePost: action.payload
+                singleConcept: action.payload
             }
-
-        case "GET_POSTS": 
+        
+        case "GET_CONCEPTS": 
             return {
                 ...globalState,
-                posts: action.payload
+                concepts: action.payload
             }
     
         default:
-            return globalState;
-    } 
-
+            return globalState; 
+    }
 
 
 
