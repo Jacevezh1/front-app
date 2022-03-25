@@ -15,15 +15,15 @@ const Home = () => {
         <div class="bg-white">
           <div class="max-w-7xl mx-auto text-center py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
             <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-              <span class="block text-5xl font-extrabold">Welcome To The <p className='text-5xl my-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-green-600'>Coindapp Blog</p></span>
+              <span class="block text-5xl font-extrabold">Welcome To The <p className='text-5xl my-2 font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-500 to-green-600'>Coindaap Blog</p></span>
               
             </h2>
             <div class="mt-8 flex justify-center">
               <div class="inline-flex rounded-md shadow">
-                <Link to={'/login'} class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"> Get started </Link>
+                <Link to={'/login'} class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"> Comienza ya </Link>
               </div>
               <div class="ml-3 inline-flex">
-                <Link to={'/posts'} class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-400 to-green-500 hover:from-pink-500 hover:to-yellow-500"> Learn more </Link>
+                <Link to={'/posts'} class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gradient-to-r from-blue-400 to-green-500 hover:from-pink-500 hover:to-yellow-500"> Aprende más </Link>
               </div>
             </div>
           </div>
@@ -55,14 +55,11 @@ const Home = () => {
                     </div>
                     <blockquote class="mt-8">
                       <div class="relative text-lg font-medium text-white md:flex-grow">
-                        <svg class="absolute top-0 left-0 transform -translate-x-3 -translate-y-2 h-8 w-8 text-cyan-400" fill="currentColor" viewBox="0 0 32 32" aria-hidden="true">
-                          <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
-                        </svg>
-                        <p class="relative">Tincidunt integer commodo, cursus etiam aliquam neque, et. Consectetur pretium in volutpat, diam. Montes, magna cursus nulla feugiat dignissim id lobortis amet.</p>
+                        <p class="relative"> "Creo que Internet será una de las principales fuerzas para reducir el papel del gobierno. Lo único que falta, pero que pronto se desarrollará es un efectivo electrónico confiable”.</p>
                       </div>
 
                       <footer class="mt-4">
-                        <p class="text-base font-semibold text-cyan-400">Sarah Williams, CEO at Workcation</p>
+                        <p class="text-base font-semibold text-white">Milton Friedman</p>
                       </footer>
                     </blockquote>
                   </div>
@@ -73,11 +70,10 @@ const Home = () => {
             <div class="relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0">
               
               <div class="pt-12 sm:pt-16 lg:pt-20">
-                <h2 class="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">On a mission to empower teams</h2>
+                <h2 class="text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl">Entiende de una vez por todas la tecnología que está revolucionando al mundo entero.</h2>
                 <div class="mt-6 text-gray-500 space-y-6">
-                  <p class="text-lg">Sagittis scelerisque nulla cursus in enim consectetur quam. Dictum urna sed consectetur neque tristique pellentesque. Blandit amet, sed aenean erat arcu morbi. Cursus faucibus nunc nisl netus morbi vel porttitor vitae ut. Amet vitae fames senectus vitae.</p>
-                  <p class="text-base leading-7">Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna. Sollicitudin tristique eros erat odio sed vitae, consequat turpis elementum. Lorem nibh vel, eget pretium arcu vitae. Eros eu viverra donec ut volutpat donec laoreet quam urna.</p>
-                  <p class="text-base leading-7">Rhoncus nisl, libero egestas diam fermentum dui. At quis tincidunt vel ultricies. Vulputate aliquet velit faucibus semper. Pellentesque in venenatis vestibulum consectetur nibh id. In id ut tempus egestas. Enim sit aliquam nec, a. Morbi enim fermentum lacus in. Viverra.</p>
+                <p class="text-lg">Nuestra misión es educar al mundo sobre el potencial que ofrece la tecnología blockchain y criptomonedas. En este sitio web, podrás encontrar más de 280 artículos que abarcan temas desde seguridad informática hasta economía.</p>
+                <p class="text-lg">Tu principal guía con todo lo relacionado con las criptos. Sin importar que seas un principiante que intenta comprender cómo funciona la minería o un experto que busca desarrollar una estrategia de trading, todo lo tenemos cubierto.</p>
                 </div>
               </div>
 
@@ -94,18 +90,12 @@ const Home = () => {
                     <dd class="text-3xl font-extrabold tracking-tight text-gray-900">5</dd>
                   </div>
 
-                  <div class="border-t-2 border-gray-100 pt-6">
-                    <dt class="text-base font-medium text-gray-500">Beta Users</dt>
-                    <dd class="text-3xl font-extrabold tracking-tight text-gray-900">521</dd>
-                  </div>
-
-                  <div class="border-t-2 border-gray-100 pt-6">
-                    <dt class="text-base font-medium text-gray-500">Raised</dt>
-                    <dd class="text-3xl font-extrabold tracking-tight text-gray-900">$25M</dd>
-                  </div>
+                  
                 </dl>
                 <div class="mt-10">
-                  <a href="#" class="text-base font-medium text-sky-700"> Learn more about how we're changing the world <span aria-hidden="true">&rarr;</span> </a>
+                  <Link to='/about'>
+                     <p href="#" class="text-base font-medium text-sky-700"> Aprende más sobre como estamos cambiando el mundo  <span aria-hidden="true">&rarr;</span> </p>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -117,18 +107,18 @@ const Home = () => {
           <div class="relative max-w-md mx-auto px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
             <div class="py-10 px-6 bg-gradient-to-l from-sky-800 to-cyan-700 rounded-3xl sm:py-16 sm:px-12 lg:py-20 lg:px-20 lg:flex lg:items-center">
               <div class="lg:w-0 lg:flex-1">
-                <h2 class="text-3xl font-extrabold tracking-tight text-white">Sign up for our newsletter</h2>
-                <p class="mt-4 max-w-3xl text-lg text-cyan-100">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui Lorem cupidatat commodo. Elit sunt amet fugiat.</p>
+                <h2 class="text-3xl font-extrabold tracking-tight text-white">Suscribete a nuestro newsletter</h2>
+                <p class="mt-4 max-w-3xl text-lg text-cyan-100">Obtén lo más reciente del mundo cripto en tu correo electrónico cada semana.</p>
               </div>
               <div class="mt-12 sm:w-full sm:max-w-md lg:mt-0 lg:ml-8 lg:flex-1">
                 <form class="sm:flex">
                   <label for="email-address" class="sr-only">Email address</label>
-                  <input id="email-address" name="email-address" type="email" autocomplete="email" required class="w-full border-white px-5 py-3 placeholder-warm-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-cyan-700 focus:ring-white rounded-md" placeholder="Enter your email"/>
-                  <button type="submit" class="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-cyan-700 focus:ring-green-400 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">Notify me</button>
+                  <input id="email-address" name="email-address" type="email" autocomplete="email" required class="w-full border-white px-5 py-3 placeholder-warm-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-cyan-700 focus:ring-white rounded-md" placeholder="Introduce correo electrónico"/>
+                  <button type="submit" class="mt-3 w-full flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-400 hover:bg-green-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-cyan-700 focus:ring-green-400 sm:mt-0 sm:ml-3 sm:w-auto sm:flex-shrink-0">Notificarme</button>
                 </form>
                 <p class="mt-3 text-sm text-cyan-100">
-                  We care about the protection of your data. Read our
-                  <a href="#" class="text-white font-medium underline"> Privacy Policy. </a>
+                  He leído y estoy de acuerdo con los Términos de servicio. 
+                  <a href="#" class="text-white font-medium underline"> Politica de privacidad </a>
                 </p>
               </div>
             </div>

@@ -37,7 +37,7 @@ const Header = () => {
 
   const [isSearchingClicked, setIsSearchingClicked] = React.useState(false) 
 
-  const [searchTerm, setSearchTerm] = React.useState('')
+  
 
 
   return (
@@ -62,9 +62,9 @@ const Header = () => {
                     </Link>
                   </div>
                   <div className="ml-12 my-8 grid-rows-4 flex-col"> 
-                    <Link to={'/about'} class="mx-4 h-10 w-auto border-transparent text-gray-100 hover:border-gray-300 hover:text-sky-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"> About </Link>
+                    <Link to={'/about'} class="mx-4 h-10 w-auto border-transparent text-gray-100 hover:border-gray-300 hover:text-sky-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"> Historia </Link>
                     <Link to={'/posts'} class="mx-4 h-10 w-auto border-transparent text-gray-100 hover:border-gray-300 hover:text-sky-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"> Blogs </Link>
-                    <Link to={'/concepts'} class="mx-4 h-10 w-auto border-transparent text-gray-100 hover:border-gray-300 hover:text-sky-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"> Concepts </Link>
+                    <Link to={'/concepts'} class="mx-4 h-10 w-auto border-transparent text-gray-100 hover:border-gray-300 hover:text-sky-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"> Conceptos </Link>
                   </div>
                 </div>
               )
@@ -82,9 +82,9 @@ const Header = () => {
               </div>
               <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
                 
-                <Link to={'/about'} class="border-transparent text-gray-700 hover:border-gray-300 hover:text-sky-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"> About </Link>
+                <Link to={'/about'} class="border-transparent text-gray-700 hover:border-gray-300 hover:text-sky-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"> Historia </Link>
                 <Link to={'/posts'} class="border-transparent text-gray-700 hover:border-gray-300 hover:text-sky-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"> Blogs </Link>
-                <Link to={'/concepts'} class="border-transparent text-gray-700 hover:border-gray-300 hover:text-sky-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"> Concepts </Link>
+                <Link to={'/concepts'} class="border-transparent text-gray-700 hover:border-gray-300 hover:text-sky-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"> Conceptos </Link>
 
               </div>
             </div>
